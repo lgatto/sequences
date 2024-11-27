@@ -65,7 +65,7 @@ transcribed with the \Rfunction{transcribe} method.
 transcribe(myseq)
 ```
 
-```{r gccount, fig.cap = "Number of A, C, G and T bases in the `myseq` object.")
+```{r gccount, fig.cap = "Number of A, C, G and T bases in the `myseq` object."}
 barplot(gccount(seq(myseq)))
 ```
 
@@ -81,9 +81,9 @@ basis in the Bioinformatics Teaching Facilty in the Department of
 Genetics, Cambridge.
 
 In November 2011 and December 2012, 2 day courses were taught at the
-EMBL in Heidelberg, at Wolfgang Huber's invitation.
+EMBL in Heidelberg, on Wolfgang Huber's invitation.
 
-```{r heidelberg2011, fig.cap = "Delegates and organisers, EMBL, Heidelberg, 28 - 29 November 2011"}
+```{r heidelberg2011, fig.cap = "Delegates and organisers, EMBL, Heidelberg, 28 - 29 November 2011", echo = FALSE}
 knitr::include_graphics("r-advanced-course-2011.jpg")
 ```
 
