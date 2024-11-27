@@ -1,6 +1,6 @@
 Package: sequences
 Title: Generic and Biological Sequences
-Version: 0.5.12
+Version: 0.5.13
 Authors@R: c(person(given = "Laurent", family = "Gatto",
                     email = "laurent.gatto@gmail.com",
                     role = c("aut", "cre")),

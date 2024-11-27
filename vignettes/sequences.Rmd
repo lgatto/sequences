@@ -13,10 +13,6 @@ vignette: >
 **Last modified:** `r file.info("sequences.Rmd")$mtime`<br />
 **Compiled**: `r date()`
 
-```{r setup, message = FALSE, echo = FALSE}
-library("PSMatch")
-```
-
 
 # Introduction
 
