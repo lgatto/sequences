@@ -1,20 +1,31 @@
-##' Reads sequences data in fasta and create \code{DnaSeq}
-##' and \code{RnaSeq} instances. 
+##' Reads sequences data in fasta and create \code{DnaSeq} and \code{RnaSeq}
+##' instances.
 ##'
-##' This funtion reads DNA and RNA fasta files and generates
-##' valid \code{"DnaSeq"} and \code{"RnaSeq"} instances.
-##' 
-##' @title Read fasta files.
-##' @param infile  the name of the fasta file which the data are to be read from.
+##' This funtion reads DNA and RNA fasta files and generates valid
+##' \code{"DnaSeq"} and \code{"RnaSeq"} instances.
+##'
+##' @title Read a fasta file.
+##'
+##' @param infile `character(1)` with the name of the fasta file to read.
+##'
 ##' @return an instance of \code{DnaSeq} or \code{RnaSeq}.
-##' @seealso \code{\linkS4class{GenericSeq}}, \code{\linkS4class{DnaSeq}} and \code{\linkS4class{RnaSeq}}.
-##' @examples
-##' f <- dir(system.file("extdata",package="sequences"),pattern="fasta",full.names=TRUE)
-##' f
-##' aa <- readFasta(f[1])
-##' aa
-##' @author Laurent Gatto \email{lg390@@cam.ac.uk}
+##'
+##' @seealso \code{\linkS4class{GenericSeq}}, \code{\linkS4class{DnaSeq}} and
+##'     \code{\linkS4class{RnaSeq}}.
+##'
+##' @author Laurent Gatto
+##'
 ##' @keywords IO, file
+##'
+##' @examples
+##' ## 2 fasta files
+##' f <- dir(system.file("extdata", package = "sequences"),
+##'          pattern = "fasta", full.names = TRUE)
+##' f
+##'
+##' ## read first fasta file
+##' x <- readFasta(f[1])
+##' x
 readFasta <- function(infile){
   lines <- readLines(infile)
   header <- grep("^>", lines)

@@ -56,7 +56,7 @@
 }
 
 \section{Objects from the Class}{A virtual Class: No objects may be
-  created from it.} 
+  created from it.}
 \section{Slots}{
   \describe{
     \item{\code{id}:}{Object of class \code{"character"} that identifies
@@ -77,7 +77,7 @@
     \item{id}{\code{signature(object = "GenericSeq")}: retrieves the
       identifier of the \code{sequence} instance. }
     \item{id<-}{\code{signature(object = "GenericSeq", value =
-	"character")}: sets the identifier of the \code{sequence}
+        "character")}: sets the identifier of the \code{sequence}
       instance to \code{value}. }
     \item{length}{\code{signature(x = "GenericSeq")}: returns the length
       the \code{sequence} instance, i.e. the number of characters of the
@@ -89,7 +89,7 @@
     \item{seq}{\code{signature(... = "GenericSeq")}: returns the
       \code{sequence} character string of the instance. }
     \item{seq<-}{\code{signature(object = "GenericSeq", value =
-	"character")}: changes the \code{sequence} string of the
+        "character")}: changes the \code{sequence} string of the
       \code{sequence} instance to \code{value}. The new string must be
       compatbile with the \code{sequence} instance alphabet.}
     \item{show}{\code{signature(object = "GenericSeq")}: displays the
@@ -102,19 +102,19 @@
 
 
 \author{
-  Laurent Gatto <lg390@cam.ac.uk>
+  Laurent Gatto
 }
 
 
 
 \seealso{
   See \code{\linkS4class{DnaSeq}} and \code{\linkS4class{RnaSeq}}
-  classes for examples of subclasses and \code{\link{readFasta}} 
+  classes for examples of subclasses and \code{\link{readFasta}}
   on how to create instances.
 }
 
 \examples{
-showClass("GenericSeq") 
+showClass("GenericSeq")
 }
 
 \keyword{classes}

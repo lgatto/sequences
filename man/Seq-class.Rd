@@ -11,15 +11,16 @@
   The \code{Seq} class implements a nucleic acid sequence as well as
   various sequence transformations. It's aim is to illustrate the usage
   of reference classes.
-  
+
 }
 \section{Extends}{
-  All reference classes extend and inherit methods from \code{"\linkS4class{envRefClass}"}.
+  All reference classes extend and inherit methods from
+  \code{"\linkS4class{envRefClass}"}.
 }
 
 
 \author{
-  Laurent Gatto <lg390@cam.ac.uk>
+  Laurent Gatto
 }
 
 \seealso{
@@ -27,9 +28,9 @@
 }
 
 \examples{
-s <- Seq$new(id="My sequence",
-             sequence="AGCAGCTACGACT",
-             alphabet=c("A","C","G","T"))
+s <- Seq$new(id = "My sequence",
+             sequence = "AGCAGCTACGACT",
+             alphabet = c("A","C","G","T"))
 s
 s$rev()
 s

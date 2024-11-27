@@ -1,19 +1,21 @@
 Package: sequences
 Title: Generic and Biological Sequences
-Version: 0.5.11
+Version: 0.5.12
 Authors@R: c(person(given = "Laurent", family = "Gatto",
-	            email = "laurent.gatto@gmail.com",
- 		    role = c("aut", "cre")),
-             person(given = "Robert", family ="Stojnic",
-		    role = "aut"))
+                    email = "laurent.gatto@gmail.com",
+                    role = c("aut", "cre")),
+             person(given = "Robert", family = "Stojnic",
+                    role = "aut"))
 Description: Educational package used in R courses to illustrate
-       	     object-oriented programming and package
-       	     development. Using biological sequences (DNA and RNA) as
-       	     a working example.
+             object-oriented programming and package
+             development. Using biological sequences (DNA and RNA) as
+             a working example.
 Depends: methods, Rcpp
 LinkingTo: Rcpp
 Suggests: testthat, knitr
 License: GPL-3
 biocViews: Infrastructure, DataRepresentation, DataImport
+Encoding: UTF-8
 VignetteBuilder: knitr
 URL: https://github.com/lgatto/sequences/
+RoxygenNote: 7.3.2

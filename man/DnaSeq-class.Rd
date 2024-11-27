@@ -19,26 +19,24 @@
 
 \title{Class "DnaSeq" and "RnaSeq"}
 
-\description{
-  The \code{DnaSeq} and \code{RnaSeq} are instances of the virtual
-  \code{\linkS4class{GenericSeq}} class for "DNA" and "RNA"
-  respectively. Their alphabets are defined accordingly. 
-  
+\description{ The \code{DnaSeq} and \code{RnaSeq} are instances of the
+  virtual \code{\linkS4class{GenericSeq}} class for "DNA" and "RNA"
+  respectively. Their alphabets are defined accordingly.
+
 }
 
 \section{Objects from the Class}{
-%% Objects can be created by calls of the form \code{new("DnaSeq",
-%% ...)}.
-Instance of \code{DnaSeq} and \code{RnaSeq} can be created by reading
-\code{fasta} files using the \code{\link{readFasta}} function. 
+ Instance of \code{DnaSeq} and \code{RnaSeq} can be created by reading
+ \code{fasta} files using the \code{\link{readFasta}} function.
 }
 
 \section{Slots}{
   See the \code{\linkS4class{GenericSeq}} class for details about the
   generic slots and methods.
 }
+
 \section{Extends}{
-Class \code{\linkS4class{GenericSeq}}, directly.
+  Class \code{\linkS4class{GenericSeq}}, directly.
 }
 
 \section{Methods}{
@@ -52,7 +50,7 @@ Class \code{\linkS4class{GenericSeq}}, directly.
 }
 
 \author{
-  Laurent Gatto <lg390@cam.ac.uk>
+  Laurent Gatto
 }
 
 % \note{
@@ -62,7 +60,7 @@ Class \code{\linkS4class{GenericSeq}}, directly.
 % %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-  See also the \code{\linkS4class{GenericSeq}} virutal class.
+  See also the \code{\linkS4class{GenericSeq}} virtual class.
 }
 
 \examples{

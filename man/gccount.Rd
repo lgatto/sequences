@@ -12,7 +12,7 @@
 
 \value{A numeric of length 4}
 
-\author{Laurent Gatto \email{lg390@cam.ac.uk}}
+\author{Laurent Gatto}
 
 \arguments{\item{inseq}{ a DNA sequence string. }}
 
@@ -20,5 +20,5 @@
 s <- "AAAACCCGGT"
 cnt <- gccount(s)
 cnt
-stopifnot(cnt==table(strsplit(s,"")))
+stopifnot(cnt == table(strsplit(s, "")))
 }
