@@ -12,7 +12,7 @@ Description: Educational package used in R courses to illustrate
              a working example.
 Depends: methods, Rcpp
 LinkingTo: Rcpp
-Suggests: testthat, knitr
+Suggests: testthat, knitr, rmarkdown
 License: GPL-3
 biocViews: Infrastructure, DataRepresentation, DataImport
 Encoding: UTF-8

@@ -1,0 +1,101 @@
+---
+title: "Short overview of the 'sequences' package"
+vignette: >
+    %\VignetteIndexEntry{The 'sequences' package}
+    %\VignetteEncoding{UTF-8}
+    %\VignettePackage{sequences}
+    %\VignetteEngine{knitr::rmarkdown}
+---
+
+
+**Package**: `sequences`<br />
+**Authors**: `r packageDescription("sequences")[["Author"]] `<br />
+**Last modified:** `r file.info("sequences.Rmd")$mtime`<br />
+**Compiled**: `r date()`
+
+```{r setup, message = FALSE, echo = FALSE}
+library("PSMatch")
+```
+
+
+# Introduction
+
+The dummy `sequences` package is used to illustrate the *Advanced R
+programming and package development*.  It describes classes and
+methods to manipulate generic and biological sequences.  If you are
+interested in real sequence manipulation in R, have a look at
+[Biostrings](http://www.bioconductor.org/help/bioc-views/release/bioc/html/Biostrings.html),
+[seqinr](http://seqinr.r-forge.r-project.org/) or
+[ape](http://cran.r-project.org/web/packages/ape/index.html), and
+possibly others.
+
+This package can be installed with
+
+```{r, eval = FALSE}
+remotes::install_github("lgatto/sequences")
+```
+
+
+# Using `sequences`
+
+Let's start by loading the package and read a fasta sequence that is
+provided with the package.
+
+```{r loadseq}
+library("sequences")
+fafile <- dir(system.file(package = "sequences", dir = "extdata"),
+              full.name = TRUE,
+              pattern = "fasta$")
+fafile
+myseq <- readFasta(fafile[1])
+myseq
+```
+
+Printing the sequence displays it's sequence numbering
+the lines.
+
+```{r}
+print(myseq)
+```
+
+This creates an instance of class \Sexpr{class(myseq)} that can be
+transcribed with the \Rfunction{transcribe} method.
+
+```{r}
+transcribe(myseq)
+```
+
+```{r gccount, fig.cap = "Number of A, C, G and T bases in the `myseq` object.")
+barplot(gccount(seq(myseq)))
+```
+
+# Background
+
+
+This package is developed as part of the *Advanced R programming and
+package development* (ARPD) course, taught by Laurent Gatto and Robert
+Stojnic.  The course has originally been set up and run as an intense
+1 day course in the Graduate School of Life Sciences of the University
+of Cambridge.  Since March 2011, the course has been run on a regular
+basis in the Bioinformatics Teaching Facilty in the Department of
+Genetics, Cambridge.
+
+In November 2011 and December 2012, 2 day courses were taught at the
+EMBL in Heidelberg, at Wolfgang Huber's invitation.
+
+```{r heidelberg2011, fig.cap = "Delegates and organisers, EMBL, Heidelberg, 28 - 29 November 2011"}
+knitr::include_graphics("r-advanced-course-2011.jpg")
+```
+
+# Acknowledgements {-}
+
+Several people have been contributed to make this course
+possible. David P. Judge, initially helped us to set up the course in
+the Bioinformatics Teaching Facilty at the Cambridge University.
+Wolfgang Huber, invited us at the EMBL in Heidelberg.
+
+# Session information
+
+```{r si}
+sessionInfo()
+```
