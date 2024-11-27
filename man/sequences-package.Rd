@@ -25,9 +25,9 @@
 }
 
 \author{
-  Laurent Gatto <lg390@cam.ac.uk>
-  Robert Stojnic <rs550@cam.ac.uk>
-  Maintainer: Laurent Gatto <lg390@cam.ac.uk>
+  Laurent Gatto 
+  Robert Stojnic
+  Maintainer: Laurent Gatto <laurent.gatto@gmail.com>
 }
 
 \keyword{ package }
